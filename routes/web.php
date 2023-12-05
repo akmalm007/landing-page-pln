@@ -14,7 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('home', [
+        "name" => "Akmal Maulana",
+        "kampus" => "Politeknik Negeri Jakarta",
+
+    ]);
 });
 
 Route::get('/about', function () {

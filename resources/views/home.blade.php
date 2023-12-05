@@ -11,6 +11,8 @@
 <body>
     <h1>Welcome to Home</h1>
     <script src="src/script.js"></script>
+    <h2>Tentang Saya</h2>
+    <p> Saya {{ $name }} dari Kampus {{ $kampus }} </p>
 </body>
 
 </html>
