@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home', [
+        "title" => "Home",
         "name" => "Akmal Maulana",
         "kampus" => "Politeknik Negeri Jakarta",
 
@@ -22,21 +23,31 @@ Route::get('/', function () {
 });
 
 Route::get('/about', function () {
-    return view('about');
+    return view('about', [
+        "title" => "About",
+    ]);
 });
 
 Route::get('/program', function () {
-    return view('program');
+    return view('program', [
+        "title" => "Program",
+    ]);
 });
 
 Route::get('/fasilitas', function () {
-    return view('fasilitas');
+    return view('fasilitas', [
+        "title" => "fasilitas",
+    ]);
 });
 
 Route::get('/kinerja', function () {
-    return view('kinerja');
+    return view('kinerja', [
+        "title" => "kinerja",
+    ]);
 });
 
 Route::get('/kontak', function () {
-    return view('kontak');
+    return view('kontak', [
+        "title" => "Kontak",
+    ]);
 });
