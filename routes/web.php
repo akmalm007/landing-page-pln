@@ -18,7 +18,6 @@ Route::get('/', function () {
         "title" => "Home",
         "name" => "Akmal Maulana",
         "kampus" => "Politeknik Negeri Jakarta",
-
     ]);
 });
 
@@ -36,13 +35,13 @@ Route::get('/program', function () {
 
 Route::get('/fasilitas', function () {
     return view('fasilitas', [
-        "title" => "fasilitas",
+        "title" => "Fasilitas",
     ]);
 });
 
 Route::get('/kinerja', function () {
     return view('kinerja', [
-        "title" => "kinerja",
+        "title" => "Finerja",
     ]);
 });
 
