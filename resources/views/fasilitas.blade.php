@@ -1,5 +1,5 @@
 @extends('layouts.main')
 
 @section('container')
-<h1>Welcome to Program</h1>
+<h1>Welcome to Fasilitas</h1>
 @endsection
