@@ -1,6 +1,5 @@
 @extends('layouts.main')
 
-
 @section('container')
 <h1>Welcome to Program</h1>
 @foreach($programs as $program)
