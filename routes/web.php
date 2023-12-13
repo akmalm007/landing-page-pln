@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProgramController;
+use App\Models\Category;
 use Illuminate\Support\Facades\Route;
 use App\Models\Program;
 
@@ -52,3 +53,12 @@ Route::get('/kontak', function () {
 Route::get('/program', [ProgramController::class, 'index']);
 
 Route::get('/signature/{signature:kompetensi}', [ProgramController::class, 'show']);
+
+Route::get('/categories/{category:slug}', function (Category $category) {
+    return view('category', [
+        'title' => $category->name,
+        'programs' => $category->programs,
+        'category' => $category->name,
+
+    ]);
+});
