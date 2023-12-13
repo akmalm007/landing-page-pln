@@ -1,14 +1,13 @@
 @extends('layouts.main')
-
 @section('container')
-<h1>Welcome to Program</h1>
+    <h1>Welcome to Program</h1>
 @foreach($programs as $program)
 <article>
     <h2>
-        <a href="/signature/{{ $program["slug"] }}">{{ $program ["title"]}}</a>
+        <a href="/signature/{{ $program->kompetensi }}">{{ $program->title }}</a>
     </h2>
-    <h5>{{ $program ["kompetensi"]}}</h5>
-    <p>{{ $program ["detail"]}}</p>
+    <h5>{{ $program->kompetensi }}</h5>
+    <p>{!! $program->detail !!}</p>
 </article>
 
 

@@ -14,11 +14,11 @@ class ProgramController extends Controller
             "programs" => Program::all()
         ]);
     }
-    public function show($slug)
+    public function show(Program $signature)
     {
         return view('signature', [
             "title" => "Signature Program",
-            "signature" => Program::find($slug)
+            "signature" => $signature
         ]);
     }
 }

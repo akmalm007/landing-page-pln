@@ -51,4 +51,4 @@ Route::get('/kontak', function () {
 
 Route::get('/program', [ProgramController::class, 'index']);
 
-Route::get('/signature/{slug}', [ProgramController::class, 'show']);
+Route::get('/signature/{signature:kompetensi}', [ProgramController::class, 'show']);
