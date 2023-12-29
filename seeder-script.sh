@@ -8,3 +8,4 @@ php artisan db:seed --class=ProgramSeeder
 
 php artisan db:seed --class=SignatureProgramSeeder
 
+composer dumpauto
