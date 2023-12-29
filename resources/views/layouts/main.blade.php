@@ -25,7 +25,7 @@
                         <a class="nav-link{{ ($title === "fasilitas") ? 'active' : '' }}" href="/fasilitas">Fasilitas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/program">Program</a>
+                        <a class="nav-link" href="/academy">Academies</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/kinerja">Kinerja</a>

@@ -1,6 +1,6 @@
 @extends('layouts.main')
 @section('container')
-    <h1>Welcome to Program</h1>
+    <h1>Leadership Academy Signature Program</h1>
 @foreach($programs as $program)
 <article>
     <h2>
