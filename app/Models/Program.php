@@ -4,16 +4,20 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Program extends Model
 {
     use HasFactory;
 
-    protected $guarded = ['id'];
-
-    public function category()
+    public function academy(): BelongsTo
     {
+        return $this->belongsTo(Academy::class);
+    }
 
-        return $this->belongsTo(Category::class);
+    public function signatureProgram(): HasMany
+    {
+        return $this->hasMany(SignatureProgram::class);
     }
 }

@@ -42,15 +42,26 @@ Route::get('/kinerja', function () {
     ]);
 });
 
-
-
 Route::get('/kontak', function () {
     return view('kontak', [
         "title" => "Kontak",
     ]);
 });
 
-Route::get('/program', [ProgramController::class, 'index']);
+Route::get('/academy', function () {
+    return view('academy', [
+        "title" => "Leadership Academy",
+        "title1" => "Corporate Planning Academy",
+        "title2" => "Risk & Finance Academy",
+        "title3" => "Digital Academy",
+    ]);
+});
+
+Route::get('/program', function () {
+    return view('program', [
+        "title" => "Apalah"
+    ]);
+});
 
 Route::get('/signature/{signature:kompetensi}', [ProgramController::class, 'show']);
 
