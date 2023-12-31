@@ -1,6 +1,6 @@
 @extends('layouts.main')
 @section('container')
-    <h1>Leadership Academy Signature Program</h1>
+<h1>Leadership Academy Signature Program</h1>
 @foreach($programs as $program)
 <article>
     <h2>
@@ -9,7 +9,7 @@
     <h5>{{ $program->kompetensi }}</h5>
     <p>{!! $program->detail !!}</p>
 </article>
-
+<a href="/academy">Back to Academy</a>
 
 @endforeach
 

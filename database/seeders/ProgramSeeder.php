@@ -13,25 +13,25 @@ class ProgramSeeder extends Seeder
      */
     public function run(): void
     {
-        Program::create([
+        Program::factory()->create([
             'academy_id' => '1',
             'name' => 'Leadership Program',
             'slug' => 'leadership-academy',
             'jenis' => 'non-teknik',
         ]);
-        Program::create([
+        Program::factory()->create([
             'academy_id' => '2',
             'name' => 'Corporate Planning Program',
             'slug' => 'coporate-planning-academy',
             'jenis' => 'teknik',
         ]);
-        Program::create([
+        Program::factory()->create([
             'academy_id' => '3',
             'name' => 'Risk and Finance Program',
             'slug' => 'risk-finance-academy',
             'jenis' => 'teknik',
         ]);
-        Program::create([
+        Program::factory()->create([
             'academy_id' => '4',
             'name' => 'Digital Program',
             'slug' => 'digital-academy',
