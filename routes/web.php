@@ -2,8 +2,8 @@
 
 use App\Http\Controllers\AcademyController;
 use App\Http\Controllers\ProgramController;
+use App\Http\Controllers\SignatureProgramController;
 use Illuminate\Support\Facades\Route;
-use App\Models\Program;
 
 /*
 |--------------------------------------------------------------------------
@@ -54,14 +54,10 @@ Route::get('/academy', [AcademyController::class, 'index']);
 //For Individual Program in PLN Example
 Route::get('/academies/{academy:slug}', [AcademyController::class, 'show']);
 
-Route::get('/program', function () {
-    return view('program', [
-        "title" => "Apalah"
-    ]);
-});
+Route::get('/program/{program:slug}', [ProgramController::class, 'show']);
 
 
-Route::get('/signature/{signature:kompetensi}', [ProgramController::class, 'show']);
+Route::get('/signature/{sig:slug}', [SignatureProgramController::class, 'show']);
 
 // Route untuk kategori tetapi udah tidak dipake
 // Route::get('/categories/{category:slug}', function (Category $category) {

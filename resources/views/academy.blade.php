@@ -11,7 +11,7 @@
    @foreach ($academies as $academy)
       <article>
         <h2>{{ $academy->title }}</h2>
-        <p><a href="/academies/{{ $academy->slug }}">Learn More</a></p>
+        <p><a href="/program/{{ $academy->slug }}">Learn More</a></p>
    @endforeach
 
 </div>

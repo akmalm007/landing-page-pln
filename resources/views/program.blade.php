@@ -1,16 +1,24 @@
 @extends('layouts.main')
 @section('container')
-<h1>Leadership Academy Signature Program</h1>
-@foreach($programs as $program)
-<article>
-    <h2>
-        <a href="/signature/{{ $program->kompetensi }}">{{ $program->title }}</a>
-    </h2>
-    <h5>{{ $program->kompetensi }}</h5>
-    <p>{!! $program->detail !!}</p>
-</article>
-<a href="/academy">Back to Academy</a>
-
-@endforeach
-
+<div>
+    <h1>Academy Individual {{ $program->name }}</h1>
+    <p>UPDL Jakarta bertanggung jawab atas penguatan dan peningkatan kompetensi pegawai melalui
+        agenda pembelajaran di academy sebagi berikut
+    </p>
+    <p>
+        {{ $program->body}}
+    </p>
+    @foreach ($signature_program as $sig)
+    <ul>
+        <li>
+            <h2> {{$sig->title}} </h2>
+            <p> {{$sig->excerpt}} </p>
+            <a href="/signature/{{ $sig->slug }} ">Read More</a>
+        </li>
+    </ul>
+    @endforeach
+    <p>
+    <a href="/academy">Back to Academy</a>
+    </p>
+</div>
 @endsection

@@ -19,7 +19,7 @@ class SignatureProgramFactory extends Factory
         return [
             //
             'excerpt' => fake()->sentence(),
-            'body' => fake()->paragraph(),
+            'body' => fake()->paragraph(100),
 
         ];
     }
