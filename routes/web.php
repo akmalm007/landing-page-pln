@@ -1,9 +1,9 @@
 <?php
 
+use App\Http\Controllers\AcademyController;
 use App\Http\Controllers\ProgramController;
-use App\Models\Category;
+use App\Http\Controllers\SignatureProgramController;
 use Illuminate\Support\Facades\Route;
-use App\Models\Program;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,7 +38,7 @@ Route::get('/fasilitas', function () {
 
 Route::get('/kinerja', function () {
     return view('kinerja', [
-        "title" => "Finerja",
+        "title" => "Kinerja",
     ]);
 });
 
@@ -48,28 +48,23 @@ Route::get('/kontak', function () {
     ]);
 });
 
-Route::get('/academy', function () {
-    return view('academy', [
-        "title" => "Leadership Academy",
-        "title1" => "Corporate Planning Academy",
-        "title2" => "Risk & Finance Academy",
-        "title3" => "Digital Academy",
-    ]);
-});
+//For All Academy in PLN
+Route::get('/academy', [AcademyController::class, 'index']);
 
-Route::get('/program', function () {
-    return view('program', [
-        "title" => "Apalah"
-    ]);
-});
+//For Individual Program in PLN Example
+Route::get('/academies/{academy:slug}', [AcademyController::class, 'show']);
 
-Route::get('/signature/{signature:kompetensi}', [ProgramController::class, 'show']);
+Route::get('/program/{program:slug}', [ProgramController::class, 'show']);
 
-Route::get('/categories/{category:slug}', function (Category $category) {
-    return view('category', [
-        'title' => $category->name,
-        'programs' => $category->programs,
-        'category' => $category->name,
 
-    ]);
-});
+Route::get('/signature/{sig:slug}', [SignatureProgramController::class, 'show']);
+
+// Route untuk kategori tetapi udah tidak dipake
+// Route::get('/categories/{category:slug}', function (Category $category) {
+//     return view('category', [
+//         'title' => $category->name,
+//         'programs' => $category->programs,
+//         'category' => $category->name,
+//
+//     ]);
+// });

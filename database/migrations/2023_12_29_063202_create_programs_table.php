@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('academy_id');
             $table->string('name')->unique();
+            $table->text('body');
             $table->string('slug')->unique();
             $table->string('jenis');
             $table->timestamps();
