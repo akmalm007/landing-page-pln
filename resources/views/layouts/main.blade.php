@@ -64,14 +64,11 @@
                             <h6 class="text-uppercase mb-4 font-weight-bold">
                                 PLN UPDL Jakarta
                             </h6>
-                            <p>
-                                PT PLN (Persero) Udiklat Jakarta adalah Udiklat ke dua yang ada dilingkungan PT PLN
-                                (Persero) Pusdiklat.
-                                PT PLN ( Persero) Unit Pendidikan dan Pelatihan Jakarta berdiri sejak tahun 1997 adalah
-                                gabungan antara Udiklat Slipi dengan Udiklat Ciracas beralamatkan di Jl. S. Parman No.
-                                27 Slipi Jakarta Barat, yang pada awalnya bergerak dibidang Pendidikan khususnya Bidang
-                                Non Teknik untuk intern PT PLN (Persero),
-                            </p>
+                        <p>
+                            PT PLN (Persero) Udiklat Jakarta adalah Udiklat ke dua yang ada dilingkungan PT PLN
+                            (Persero) Pusdiklat.
+                            PT PLN ( Persero) Unit Pendidikan dan Pelatihan Jakarta berdiri sejak tahun 1997
+                        </p>
                         </div>
                         <!-- Grid column -->
 
@@ -111,7 +108,6 @@
                             <p><i class="fas fa-home mr-3"></i> Jl. Letjen S. Parman No.27, RT.12/RW.2, Slipi, Kec. Grogol petamburan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11440</p>
                             <p><i class="fas fa-envelope mr-3"></i>plnudiklatjakarta@pln.co.id</p>
                             <p><i class="fas fa-phone mr-3"></i> (021) 5357659</p>
-                            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
                         </div>
                         <!-- Grid column -->
 
