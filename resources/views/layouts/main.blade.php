@@ -164,7 +164,7 @@
 
             <!-- Copyright -->
             <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-                © 2020 PLN UPDL Jakarta: All right reversed
+                © 2024 PLN UPDL Jakarta: All right reversed
             </div>
             <!-- Copyright -->
         </footer>
