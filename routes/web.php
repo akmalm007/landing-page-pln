@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AcademyController;
+use App\Http\Controllers\FacilityController;
 use App\Http\Controllers\ProgramController;
 use App\Http\Controllers\SignatureProgramController;
 use Illuminate\Support\Facades\Route;
@@ -19,8 +20,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home', [
         "title" => "Home",
-        "name" => "Akmal Maulana",
-        "kampus" => "Politeknik Negeri Jakarta",
     ]);
 });
 
@@ -30,11 +29,6 @@ Route::get('/about', function () {
     ]);
 });
 
-Route::get('/fasilitas', function () {
-    return view('fasilitas', [
-        "title" => "Fasilitas",
-    ]);
-});
 
 Route::get('/kinerja', function () {
     return view('kinerja', [
@@ -47,6 +41,8 @@ Route::get('/kontak', function () {
         "title" => "Kontak",
     ]);
 });
+//Yeah i make model for facility
+Route::get('/fasilitas', [FacilityController::class, 'index']);
 
 //For All Academy in PLN
 Route::get('/academy', [AcademyController::class, 'index']);

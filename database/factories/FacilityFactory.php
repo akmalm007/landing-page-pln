@@ -18,6 +18,7 @@ class FacilityFactory extends Factory
     {
         return [
             //
+            'desc' => fake()->paragraph()
         ];
     }
 }

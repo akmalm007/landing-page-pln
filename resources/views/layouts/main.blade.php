@@ -24,11 +24,11 @@
                         <a class="nav-link {{ ($title === " about") ? 'active' : '' }}" href="/about">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link{{ ($title === " fasilitas") ? 'active' : '' }}"
-                            href="/fasilitas">Fasilitas</a>
+                        <a class="nav-link" href="/academy">Academies</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/academy">Academies</a>
+                        <a class="nav-link{{ ($title === " fasilitas") ? 'active' : '' }}"
+                        href="/fasilitas">Fasilitas</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/kinerja">Kinerja</a>
