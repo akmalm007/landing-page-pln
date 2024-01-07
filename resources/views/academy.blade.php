@@ -6,13 +6,18 @@
     agenda pembelajaran di academy sebagi berikut
     </p>
 </div>
+
 <div>
-
-   @foreach ($academies as $academy)
-      <article>
-        <h2>{{ $academy->title }}</h2>
-        <p><a href="/program/{{ $academy->slug }}">Learn More</a></p>
-   @endforeach
-
+    @foreach ($academies as $academy)
+    <div class="card mb-3 text-center">
+        <img src="https://source.unsplash.com/random?{{ $academy->title }}" style="height: 300px" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h2 class="card-title">{{ $academy->title }}</h2>
+            <p class="card-text">{{ $academy->slug }}</p>
+            <p><a href="/program/{{ $academy->slug }}" class="btn btn-primary">Learn More</a></p>
+        </div>
+    </div>
+@endforeach
 </div>
+
 @endsection

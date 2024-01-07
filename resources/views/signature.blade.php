@@ -1,12 +1,15 @@
 @extends('layouts.main')
 @section('container')
-<h1>Welcome to Signature Program  </h1>
-<article>
-    <img src="../img/963.jpg" width="200" alt="Porsche 963">
-    <h2> {{ $sig->title }} </h2>
-    <p> {{ $sig->body }}
-</article>
     <p><a href="/program/{{ $program->slug }}">Back to program</a>
-
-
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                    <h2 class="text-center"> {{ $sig->title }} </h2>
+                    <img src="https://source.unsplash.com/1200x400?{{ $sig->program->name }}" alt="{{ $sig->program->name }}" class="img-fluid">
+                    <article>
+                        <p> {{ $sig->body }}
+                    </article>
+            </div>
+        </div>
+    </div>
 @endsection

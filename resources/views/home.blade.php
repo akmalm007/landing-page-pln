@@ -1,19 +1,27 @@
 @extends('layouts.main')
 @section('container')
-<div class="card text-bg-dark">
-    <img src="img/img.jpg" style="width: 1300px; height: 400px;" class="card-img" alt="...">
-    <div class="card-img-overlay">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
-            This content is a little bit longer.</p>
-        <p class="card-text"><small>Last updated 3 mins ago</small></p>
+
+<div class="container">
+    <div class="row mb-5">
+        <div class="col-md-8">
+            <img src="img/home.png" class="">
+        </div>
+        <div class="col-md-4">
+            <h1>PLN UPDL Jakarta</h1>
+            <h2>Welcome to UPDL Jakarta</h2>
+            <h5>#UPDL Jakarta Bahagia</h5>
+        </div>
+    </div>
+    <div class="row">
+        <h2>Our Team</h2>
+        <h5>UPDL Jakarta dikelola oleh 25 pegawai terdiri atas</h5>
+        <div class="col">
+            <img src="img/struktur.png" style="height: 400px">
+        </div>
+        <div class="col">
+            <img src="img/team.png" class="position-absolute" style="height: 350px">
+        </div>
     </div>
 </div>
-<h1>Halaman Home</h1>
-<ol>
-    <li>List yang perlu dilakukan selama development</li>
-    <li>Coba develop sampai bagia migration</li>
-    <li>Hostig di Google Cloud dengan Compute Engine</li>
-    <li>Buat Github action agar CI/CD</li>
-</ol>
+
 @endsection

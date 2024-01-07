@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PLN Udiklat Jakarta | {{$title}}</title>
     <link href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/svg" href="img/Logo_PLN.svg"/>
 </head>
 
 <body>
@@ -23,11 +24,11 @@
                         <a class="nav-link {{ ($title === " about") ? 'active' : '' }}" href="/about">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link{{ ($title === " fasilitas") ? 'active' : '' }}"
-                            href="/fasilitas">Fasilitas</a>
+                        <a class="nav-link" href="/academy">Academies</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/academy">Academies</a>
+                        <a class="nav-link{{ ($title === " fasilitas") ? 'active' : '' }}"
+                        href="/fasilitas">Fasilitas</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/kinerja">Kinerja</a>
@@ -124,7 +125,7 @@
                             </a>
 
                             <!-- Twitter -->
-                            <a class="btn btn-primary rounded-circle btn-floating m-1" style="background-color: #55acee" href="#!"
+                            <a class="btn btn-primary rounded-circle btn-floating m-1" style="background-color: black" href="#!"
                                 role="button">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
                                 <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
@@ -164,7 +165,7 @@
 
             <!-- Copyright -->
             <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-                © 2020 PLN UPDL Jakarta: All right reversed
+                © 2024 PLN UPDL Jakarta: All right reversed
             </div>
             <!-- Copyright -->
         </footer>
