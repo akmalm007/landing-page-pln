@@ -7,7 +7,6 @@
             <img src="img/home.png" class="">
         </div>
         <div class="col-md-4">
-            <h1>Halo Akmal</h1>
             <h1>PLN UPDL Jakarta</h1>
             <h2>Welcome to UPDL Jakarta</h2>
             <h5>#UPDL Jakarta Bahagia</h5>
